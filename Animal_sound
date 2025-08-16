@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -37,15 +39,131 @@ class AnimalSound extends StatelessWidget {
         ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(width: 150, height: 150, color: Colors.red),
-          Container(width: 150, height: 150, color: Colors.yellow),
-          Container(width: 150, height: 150, color: Colors.blue),
-          Container(width: double.infinity),
+          Padding(
+            padding: const EdgeInsets.only(top: 10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Image.asset("images/lion.png", height: 100),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, bottom: 10),
+                      child: Container(
+                        width: 115,
+                        height: 2,
+                        color: Colors.black,
+                      ),
+                    ),
+                    const Text(
+                      "Lion",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  ],
+                ),
+
+                Column(
+                  children: [
+                    Image.asset("images/tiger.png", height: 100),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, bottom: 10),
+                      child: Container(
+                        width: 115,
+                        height: 2,
+                        color: Colors.black,
+                      ),
+                    ),
+                    const Text(
+                      "Tiger",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                children: [
+                  Image.asset("images/koala.png", height: 100),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10, bottom: 10),
+                    child: Container(
+                      width: 115,
+                      height: 2,
+                      color: Colors.black,
+                    ),
+                  ),
+                  const Text(
+                    "koala",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Image.asset("images/fox.png", height: 100),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10, bottom: 10),
+                    child: Container(
+                      width: 115,
+                      height: 2,
+                      color: Colors.black,
+                    ),
+                  ),
+                  const Text(
+                    "fox",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                children: [
+                  Image.asset("images/camel.png", height: 100),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: Container(
+                      width: 115,
+                      height: 2,
+                      color: Colors.black,
+                    ),
+                  ),
+                  const Text(
+                    "camel",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Image.asset("images/bear.png", height: 100),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10, bottom: 10),
+                    child: Container(
+                      width: 115,
+                      height: 2,
+                      color: Colors.black,
+                    ),
+                  ),
+                  const Text(
+                    "bear",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
 }
-
